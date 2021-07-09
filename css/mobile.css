@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --dark-desaturated-blue: hsl(212, 27%, 19%);
+    --vdark-graysh-blue: hsl(213, 9%, 39%);
+    --dark-graysh-blue: hsl(232, 10%, 55%);
+    --graysh-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+header {
+    background-image: url('/assets/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Fraunces';
+    text-align: center;
+    margin-block-start: 7rem;
+    letter-spacing: 0.9rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+}
+
+.arrow {
+    display: block;
+    margin: 5rem auto;
+
+    animation: downArrow 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes downArrow {
+    0% { -webkit-transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(1rem);
+    }
+}
+
+.main {
+    height: auto;
+}
+
+.main--section-egg {
+    background-image: url(/assets/mobile/image-egg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main--section-brand {
+    background-color: var(--white);
+    text-align: center;
+    color: var(--dark-desaturated-blue);
+}
+
+.main--section-brand h2 {
+    font-family: 'Fraunces';
+    margin: 4rem auto 0;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.main--section-brand p {
+    text-align: center;
+    font-family: 'Barlow';
+    margin: 2rem 2rem 0;
+    color: var(--dark-graysh-blue);
+}
+
+.main--section-brand p {
+    font-family: 'Fraunces';
+    margin: 3rem;
+    font-weight: 900;
+}
+
+.main--section-brand a {
+    text-decoration: underline solid 3px var(--yellow);
+}
+
+.main--section-brand a:visited {
+    color: var(--dark-desaturated-blue);
+}
