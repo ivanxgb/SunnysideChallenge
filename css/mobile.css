@@ -37,10 +37,6 @@ h1 {
     }
 }
 
-.main {
-    height: auto;
-}
-
 .main--section-egg, .main--section-stand, .main--section-graphic, .main--section-photography {
     background-position: center;
     background-size: cover;
@@ -167,4 +163,102 @@ h1 {
 .main--section-testimonial section p:last-of-type {
     font-size: 1.4rem;
     color: var(--graysh-blue);
+}
+
+.main--section-gallery {
+    display: grid;
+    height: 55vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0;
+}
+
+.main--section-gallery .gallery-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.main--section-gallery .first {
+    background-image: url('/assets/mobile/image-gallery-milkbottles.jpg');
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.main--section-gallery .second {
+    background-image: url('/assets/mobile/image-gallery-orange.jpg');
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.main--section-gallery .third {
+    background-image: url('/assets/mobile/image-gallery-cone.jpg');
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.main--section-gallery .fourth {
+    background-image: url('/assets/mobile/image-gallery-sugar-cubes.jpg');
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.footer {
+    background-color: var(--green-light);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.footer > nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-family: 'Barlow';
+
+}
+
+.footer > nav li {
+    list-style: none;
+    font-size: 2rem;
+    color: var(--dark-moderate-cyan);
+}
+
+.footer div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .logo-i {
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.footer .facebook {
+    background-image: url('/assets/icons/icon-facebook.svg');
+}
+
+.footer .twitter {
+    background-image: url('/assets/icons/icon-twitter.svg');
+}
+
+.footer .instagram {
+    background-image: url('/assets/icons/icon-instagram.svg');
+}
+
+.footer .pinterest {
+    background-image: url('/assets/icons/icon-pinterest.svg');
+}
+
+.footer p {
+    font-family: 'barlow';
 }
