@@ -1,0 +1,28 @@
+.hamburger {
+    display: none;
+}
+
+.navbar--ul {
+    display: flex;
+    background-color: transparent;
+    width: 50%;
+    max-width: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: initial;
+}
+
+.navbar--ul::after {
+    display: none;
+}
+
+.navbar--ul li:nth-of-type(4) {
+    height: 4rem;
+    max-width: 150px;
+    background-color: white;
+    padding-block-start: 1rem;
+}
+
+.navbar--ul li a {
+    color: white;
+}

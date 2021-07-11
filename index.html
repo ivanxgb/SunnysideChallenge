@@ -6,16 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 768px)">
+    
     <title>Sunnyside Challenge</title>
 </head>
 <body>
 
     <header id="header">
-        <img src="./assets/logo.svg" alt="Sunnyside logo" class="logo">
+
+        <nav class="header--navbar">
+            <img src="./assets/logo.svg" alt="Sunnyside logo" class="header--logo">
+
+            <ul class="navbar--ul" id="menu">
+                <li><a href="#brand" class="ul-items">About</a></li>
+                <li><a href="#graphic" class="ul-items">Services</a></li>
+                <li><a href="#testimonial" class="ul-items">Projects</a></li>
+                <li><a href="#footer" class="ul-items">Contact</a></li>
+            </ul>
+
+            <button class="header--button logo-i hamburger" id="hamburguer" onclick="menu()">
+            </button>
+
+
+        </nav>
 
         <h1>We are Creatives</h1>
 
-        <a href="#testimonial"><img src="./assets/icons/icon-arrow-down.svg" alt="Icon Arrow Down" class="arrow"></a>
+        <a href="#brand"><img src="./assets/icons/icon-arrow-down.svg" alt="Icon Arrow Down" class="arrow"></a>
     </header>
 
     <main class="main">
@@ -30,7 +47,7 @@
             <p> We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
 
-            <p><a href="#header">LEARN MORE</a></p>
+            <p><a href="#stand">LEARN MORE</a></p>
         </section>
 
         <section class="main--section-stand" id="stand"></section>
@@ -40,7 +57,7 @@
 
             <p>Using a collaborative formula of designer, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places</p>
 
-            <p><a href="#header">LEARN MORE</a></p>
+            <p><a href="#graphic">LEARN MORE</a></p>
         </section>
 
         <section class="main--section-text main--section-graphic graphic" id="graphic">
@@ -92,15 +109,17 @@
         </section>
     </main>
 
-    <footer class="footer sticky-footer">
+    <footer class="footer sticky-footer" id="footer">
         
         <img src="./assets/logo2.svg" alt="Sunnyside Logo" class="footer--logo">
 
         <nav>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
+            <li><a href="#brand">About</a></li>
+            <li><a href="#graphic">Services</a></li>
+            <li><a href="#testimonial">Projects</a></li>
         </nav>
+
+        
 
         <div>
             <span class="logo-i facebook"></span>
@@ -113,6 +132,8 @@
         </div>
 
     </footer>
+
+    <script src="./js/menu.js"></script>
     
 </body>
 </html>
